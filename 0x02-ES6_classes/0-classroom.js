@@ -1,10 +1,14 @@
-//Implement a class named ClassRoom:
-
-// Prototype: export default class ClassRoom
-// It should accept one attribute named maxStudentsSize (Number) and assigned to _maxStudentsSize
-
+/* eslint-disable no-underscore-dangle */
+/**
+ * Represents a class room.
+ */
 export default class ClassRoom {
-    constructor(maxStudentsSize) {
-        this._maxStudentsSize = maxStudentsSize;
-    }
-    }
+  /**
+     * Creates a new @see {@link ClassRoom}.
+     * @param {Number} maxStudentsSize - The maximum number of
+     * students in the class.
+     */
+  constructor(maxStudentsSize) {
+    this._maxStudentsSize = maxStudentsSize;
+  }
+}
