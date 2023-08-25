@@ -7,7 +7,14 @@ module.exports = {
     extends: [
       'airbnb-base',
       'plugin:jest/all',
-    ],
+    ],  
+    "jest/require-hook": [
+        "error",
+        {
+          "allowedFunctionCalls": ["enableAutoDestroy"]
+        }
+      ],
+
     globals: {
       Atomics: 'readonly',
       SharedArrayBuffer: 'readonly',
